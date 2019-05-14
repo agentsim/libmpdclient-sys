@@ -1,0 +1,24 @@
+[package]
+name = "libmpdclient-sys"
+version = "2.16.0"
+build = "build.rs"
+links = "mpdclient"
+edition = "2018"
+
+authors = ["agentsim"]
+description = "FFI bindings to libmpdclient"
+repository = "https://github.com/agentsim/libmpdclient-sys"
+keywords = ["libmpdclient", "mpd"]
+
+[dependencies]
+libc = "^0.2"
+
+[build-dependencies]
+bindgen = "*"
+cc = "^1"
+failure = "*"
+git2 = "^0.8"
+
+
+[features]
+latest = []
